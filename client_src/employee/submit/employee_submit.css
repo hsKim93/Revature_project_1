@@ -1,0 +1,59 @@
+body {
+    background-color:steelblue;
+}
+
+#logout {
+    margin-left: auto;
+    margin-right: 2%;
+}
+
+#nav1 {
+    margin-left: 2%;
+}
+
+#nav1:hover {
+    cursor: default;
+}
+
+.activated {
+    cursor: pointer;
+}
+
+.container {
+    margin-top: 2%;
+}
+
+h2 {
+    margin-top: 2%;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+#reasonInput {
+    width: 400px;
+}
+
+#amountInput {
+    width: auto;
+}
+
+#op-0 {
+    opacity: 0;
+}
+
+#fail {
+    color:darkred;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+}
+
+#success {
+    color:limegreen;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+}
