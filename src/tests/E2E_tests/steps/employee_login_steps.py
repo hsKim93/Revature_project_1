@@ -9,7 +9,7 @@ def get_login_page(context):
 
 @When(u'The employee enters their credentials')
 def type_employee_credentials(context):
-    context.login_page.select_user_id().send_keys("employee_test")
+    context.login_page.select_user_id().send_keys("b_test")
     context.login_page.select_user_pw().send_keys("123123")
 
 

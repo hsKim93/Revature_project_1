@@ -18,7 +18,7 @@ def test_request_log_in_manager():
 # submit new reimbursement
 def test_submit_new_reim():
     submitted_date = date.today()
-    new_reim = Reimbursement(0, 1, 500, "medical bill", "pending", submitted_date)
+    new_reim = Reimbursement(0, 3, 500, "medical bill", "pending", submitted_date)
     result = employee_dao.submit_new_reim(new_reim)
     assert result.employee_id == new_reim.employee_id \
            and result.reim_amount == new_reim.reim_amount \

@@ -5,7 +5,7 @@ from behave import given, when, then
 @given(u'The employee is on employee homepage')
 def get_employee_homepage(context):
     context.driver.get("http://127.0.0.1:5500/client_src/login/index.html")
-    context.login_page.select_user_id().send_keys("employee_test")
+    context.login_page.select_user_id().send_keys("b_test")
     context.login_page.select_user_pw().send_keys("123123")
     context.login_page.select_submit_button().click()
     time.sleep(1)
