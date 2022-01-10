@@ -27,5 +27,28 @@ This app allows employees to submit reimbursement requests and view their reimbu
 
 ## Getting Started
    
-1. Run main.py
-2. Run index.html
+1. Set up PostgreSQL data base
+```
+create table employee (
+	employee_id serial primary key,
+	fisrt_name varchar(20),
+	last_name varchar(20),
+	employee_role varchar(8),
+	employee_log_in_id varchar(20) unique,
+	employee_log_in_pw varchar(20)
+);
+
+create table reimbursement (
+	reim_id serial primary key,
+	employee_id int references employee(employee_id) on delete cascade,
+	reim_amount decimal,
+	reim_reason text,
+	status varchar(8) default 'pending',
+	submitted_date varchar(40),
+	processed_date varchar(40) default NULL,
+	manager_comment text default NULL
+);
+```
+2. Add your database environment variables to your main.py
+3. Run main.py
+4. Run index.html
