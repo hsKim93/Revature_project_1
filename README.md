@@ -1,30 +1,31 @@
-# Revature_project_1
+# Reimbursement App
 
-This is a web application for reimubrsement management system to demonstrate RESTful API, TDD, and BDD using robust testing and thorough user stories.
+## Project Description
 
-The web will consists of 2 types of users:
-- Employee
-- Manager
+This app allows employees to submit reimbursement requests and view their reimbursement history, and allows managers to manage employees' reimbursement requests as well as view history and statistics.
 
-The web application allows employees to:
-- submit reimbursement requests
-- view pending and past requests
+## Technologies Used
 
-In addition, the web application allows managers to:
-- view all existing reimbursements
-- view 5 statistics related to reimbursements 
-  - Total amount
-  - Higest amount 
-  - lowest amount
-  - average amount
-  - approval ratio
+* Python - version 3.9.9
+* Flask - version 2.0.2
+* Selenium - version 4.1.0
+* behave - version 1.2.6
+* pytest - version 6.2.5
+* Psycopg - version 3.0.5
+* DBeaver - version 21.3.1
+* PostgreSQL - version 9.6
+* HTML5
+* CSS3
+* Javascript
 
-### Technologies used:
-  - JavaScript
-  - HTML
-  - CSS
-  - SQL
-  - Python
-  - Flask
-  - Postman
-  - Selenium
+## Features
+
+* Log in feature for both employee and manager
+* Reimbursement submission feature for employee
+* Reimbursement history feature for employee and manager
+* Reimbursement management feature for manager
+
+## Getting Started
+   
+1. Run main.py
+2. Run index.html
